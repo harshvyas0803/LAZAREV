@@ -784,11 +784,10 @@ summary::marker {
     transform: translateX(50%);
 }
 
- 
-/* Hover effect for each navigation element */
+  
 .nav-elem:hover {
-    transform: scale(1.05); /* Enlarge the element on hover */
-    background-color: rgba(0, 0, 0, 0.05); /* Optional: change background color on hover */
+    transform: scale(1.05);  
+    background-color: rgba(0, 0, 0, 0.05);  
 }
 
 /* Style for the button */
@@ -828,18 +827,34 @@ h4:hover{
 h5:hover{
     transform: scale(1.05); 
 }
-
-#page7{
-    width: 25%;
-    display: flex;justify-content: center;
+ #page7 {
+    width: 50%;  
+    max-width: 300px;  
+    min-width: 150px;  
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 5vh;
-
-    margin-left: 40%;
+    height: 7vh;  
+    margin: 0 auto;  
     background-color: #0BA34E;
-    border-radius: 50vh 
+    border-radius: 50px;  
+    text-align: center;  
 }
-a{
-    
+
+a {
     color: white;
+    font-size: 1.2em;  
+    text-decoration: none; 
+}
+
+ 
+@media (max-width: 480px) {
+    #page7 {
+        width: 80%;  
+        height: 10vh;  
+    }
+
+    a {
+        font-size: 1em;  
+    }
 }
